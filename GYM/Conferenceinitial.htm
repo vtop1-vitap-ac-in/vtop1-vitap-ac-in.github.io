@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://vtop1.vitap.ac.in/GYM/Conferenceinitial -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+.footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #ffd54f;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+li {
+	display: inline-block;
+	font-size: 1.5em;
+	list-style-type: none;
+	padding: 1em;
+	text-transform: uppercase;
+}
+
+li span {
+	display: block;
+	font-size: 4.5rem;
+}
+</style>
+<script src="./Conferenceinitial_files/jquery.min.js.download"></script>
+<script src="./Conferenceinitial_files/bootstrap.min.js.download"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src="./Conferenceinitial_files/jquery.blockUI.min.js.download"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
+<link rel="stylesheet" href="./Conferenceinitial_files/all.css">
+
+<!-- <script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<link rel="stylesheet" href="./bootstrap.min.css">
+
+<link rel="stylesheet" href="./Conferenceinitial_files/validationEngine.jquery.css" type="text/css">
+<script src="./Conferenceinitial_files/jquery.validate.min.js.download"></script>
+
+
+<script type="text/javascript" src="./Conferenceinitial_files/script1.js.download"></script>
+<script type="text/javascript" src="./Conferenceinitial_files/jquery.blockUI.js.download"></script>
+<script src="./Conferenceinitial_files/jquery-1.12.4.js.download"></script>
+<script src="./Conferenceinitial_files/jquery-ui.js.download"></script>
+<link rel="stylesheet" href="./Conferenceinitial_files/jquery-ui.css">
+
+
+<script>
+	
+</script>
+<link rel="stylesheet" href="./Conferenceinitial_files/jquery-ui.css">
+
+<script src="./Conferenceinitial_files/jquery-1.12.4.js.download"></script>
+<script src="./Conferenceinitial_files/jquery-ui.js.download"></script>
+<script type="text/javascript">
+/* 	$(function() {
+		var $j = jQuery.noConflict();
+
+		$("#dob").datepicker();
+	}); */
+</script>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1057.0" data-gr-ext-installed="">
+	<script src="./Conferenceinitial_files/jquery.blockUI.min.js.download"></script>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container" id="page-wrapper">
+			<a class="navbar-brand" href="javascript:void(0)"><img src="./Conferenceinitial_files/new VIT_AP logo.png" class="img-responsive pull-right " alt="User Image" width="170" height="60"></a> <a class="float-left" style="text-align: center; color: white;" href="javascript:void(0)"><b>VIT-AP GYM
+					</b></a><b>
+			<div class="form-row">
+				<div class="form-group col-md-6 mt-2">
+					<input class="form-control" style="width: 100%; border-radius: 45px;" type="text" id="number" placeholder="Application Number">
+
+				</div>
+				<div class="form-group col-md-6 mt-2">
+
+					<button class="btn btn-danger " id="myBtn" onclick="xyz2();" style="align: left; font-family: &#39;Roboto&#39;, sans-serif; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); transition: all 0.3s ease 0s; cursor: pointer; border-radius: 45px;">Pay
+						Here</button>
+				</div>
+			</div>
+		</b></div><b>
+	</b></nav><b>
+
+
+	<form id="register">
+		<div>
+
+			<!--   <script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+			<script src="./Conferenceinitial_files/jquery.min(1).js.download"></script>
+
+			<script src="./Conferenceinitial_files/bootstrap.min(1).js.download"></script>
+
+
+			<script type="text/javascript" src="./Conferenceinitial_files/jquery.blockUI.js.download"></script>
+
+
+			<script>
+				/*<![CDATA[*/
+
+				$(document)
+						.ready(
+								function() { /* code here */
+									$("#payment").hide();
+									$("#receiptDownload").hide();
+									$("#refresh").hide();
+									$("#exp").hide();
+									/* 	$("#payment").hide();
+										$("#refresh").hide();
+										$("#paperyes").hide();
+										$("#paperyescount").hide();
+										document.getElementById("hostelyesorno").value="0";
+										document.getElementById("parentcat").value="";
+										
+										$("#hosteldayscountdiv").hide();
+										document.getElementById("addpapercount").value="";
+
+										document.getElementById("paper").checked = false;
+										document.getElementById("paper1").checked = false;
+										$("#passportNumber").hide();
+										$("#AdharNumber").hide();
+										$("#catshow").hide();
+										$("#memberfilediv").hide();
+										$("#memberid").hide();
+										$('#studentiddiv').hide();
+										$('#membershipvaliddate').hide();
+										$('#paperyescount').hide(); */
+
+									$('#country')
+											.change(
+													function() {
+
+														if ($('#country').val() == 'India'
+																|| $('#country')
+																		.val() == 'india') {
+
+															$("#AdharNumber")
+																	.show();
+															$("#passportNumber")
+																	.hide();
+														} else {
+															$("#passportNumber")
+																	.show();
+															$("#AdharNumber")
+																	.hide();
+														}
+
+													});
+								});
+
+
+
+				function getnumber() {
+
+					var mobile = document.getElementById("number").value;
+
+					return mobile;
+
+				}
+						
+						function vtopDownload(urlText,dataToSend) {
+							var params=null;  
+							var now = new Date();
+							var appNo = document.getElementById('applicationNumber').value;
+							$.blockUI({
+								message : '<img src="assets/img/482.GIF"> loading... Just a moment...'
+							});	
+							/* if(dataToSend==='null' || dataToSend===undefined || dataToSend===null || dataToSend==='') {
+								params="authorizedID="+id+"&x="+now.toUTCString(); 
+							}
+							else{ 
+								params=dataToSend+"&authorizedID="+id+"&x="+now.toUTCString(); 
+							}  */
+							params = "applicationNumber=" + appNo;
+							window.open(urlText+'?'+params,"_blank","width=200,height=100,fullscreen=no,top=100"); 
+							$.unblockUI(); 
+						}
+
+				function abc()
+
+				{
+
+					$("#refresh").hide();
+					$("#succRefresh").hide();
+
+					var myform = document.getElementById("register");
+					fd = new FormData(myform);
+
+					$("#payment").hide();
+					$("#receiptDownload").hide();
+
+					$
+							.blockUI({
+								message : '<img src="assets/img/482.GIF"> Loading... Just a moment...'
+							});
+					$.ajax({
+
+						url : "https://vtop1.vitap.ac.in/GYM/Processracspadetails",
+						type : "POST",
+						data : fd,
+						cache : false,
+						processData : false,
+						contentType : false,
+						//For Progress Bar
+						success : function(response) {
+							$.unblockUI();
+
+							$("#refresh").html(response);
+							if (response.indexOf("www") > 0) {
+
+								var a = document.getElementById("link");
+								a.setAttribute("href", response);
+
+								$("#payment").show();
+
+							} else {
+								$("#refresh").show();
+							}
+							//$("#p").show();
+							document.getElementById("p").innerHTML = response;
+
+						},
+						error : function(jqXHR, textStatus, errorMessage) {
+
+							$("#upload-file-message").text(
+									errorMessage + "Error while Addition");
+						}
+					});
+
+				}
+
+				/* 		const second = 1000, minute = second * 60, hour = minute * 60, day = hour * 24;
+
+						let countDown = new Date('Jan 07, 2020 17:00:00').getTime(), x = setInterval(
+								function() {
+
+									let now = new Date().getTime(), distance = countDown
+											- now;
+
+											document.getElementById('days').innerText = Math
+													.floor(distance / (day)),
+											document.getElementById('hours').innerText = Math
+													.floor((distance % (day)) / (hour)),
+											document.getElementById('minutes').innerText = Math
+													.floor((distance % (hour))
+															/ (minute)),
+											document.getElementById('seconds').innerText = Math
+													.floor((distance % (minute))
+															/ second);
+
+									//do something later when date is reached
+									if (distance < 0) {
+									  clearInterval(x);
+									  document.getElementById('days').innerText = 0,
+								document.getElementById('hours').innerText = 0,
+								document.getElementById('minutes').innerText = 0,
+								document.getElementById('seconds').innerText = 0;
+									}
+
+								}, second) */
+
+				/*]]>*/
+			</script>
+
+
+
+			<div class="container " style="margin-top: 5%;" id="instructions">
+				<!-- timer code locked -->
+				<!-- 	<div class="card ">
+					<h5 class="card-header " align="center" style="color: red;"
+						id="head">Countdown for Conference</h5>
+					<div class="card-body" align="center">
+						<h5 class="card-title"></h5>
+						<p class="card-text ml-1">
+						<ul style="color: green;">
+							<li><span id="days"></span>days</li>
+							<li><span id="hours"></span>Hours</li>
+							<li><span id="minutes"></span>Minutes</li>
+							<li><span id="seconds"></span>Seconds</li>
+						</ul>
+						</p>
+
+					</div>
+				</div> -->
+
+				<div class="container " style="margin-top: 5%;" id="instructions">
+					<div class="card ">
+						<h5 class="card-header " align="center" style="color: red;">Instructions</h5>
+						<div class="card-body">
+							<h5 class="card-title"></h5>
+
+							<p class="card-text ml-1">
+								Any Payment Related Queries mail to <span style="color: red;"><b>vtop.help@vitap.ac.in</b></span>
+							</p>
+							<p class="card-text ml-1">
+								If you skip the Payment page,later you can pay the fee by given
+								<b>Application Number</b> on the top.
+							
+							</p><p class="card-text ml-1">
+								kindly check your email for <b>Application Number</b> .
+							</p>
+
+
+
+
+
+						</div>
+					</div>
+
+
+					<!-- <div class="card " align="center" id="ConferenceResponse">
+							<h5 class="card-header ">Invoice Copy</h5>
+							<div class="card-body">
+
+								<h5 class="card-text"></h5>
+								<p style="color: red; text-align: center; font-size: 48px;">
+									<b> <a id="invoiceLink" href="" class="btn btn-primary"
+										onclick="downloadInvoice();">Download Invoice Copy</a>
+									</b>
+
+								</p>
+							</div>
+
+						</div> -->
+					</div>
+					<br>
+					<div class="container" align="center" id="receiptDownload" style="display: none;">
+						<b> <a id="recieptLink" href="https://vtop1.vitap.ac.in/GYM/Conferenceinitial" class="btn btn-primary" onclick="downloadReciept();">Download Receipt</a>
+						</b>
+					</div>
+
+
+
+					<div class="container " style="border-style: solid; margin-top: 3%; padding: 3%; border-radius: 20px;">
+						<div id="refresh" class="alert alert-warning  alert-dismissible fade show ml-2" role="alert" style="display: none;">
+							<p class="ml-5" id="p">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+							</p>
+
+						</div>
+
+
+
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputEmail4">Name<span style="color: red">*</span></label>
+								<input type="text" class="form-control" id="name" name="name" placeholder="Name" data-validation-engine="validate[required]">
+							</div>
+							
+							
+							
+								
+							<div class="form-group col-md-6">
+								<label for="inputEmail4">Vitap Email<span style="color: red">*</span></label>
+								<input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email" data-validation-engine="validate[required]">
+							</div>
+							
+							
+							<!-- <div class="form-group col-md-6">
+								<label for="inputPassword4">Present Organization<span
+									style="color: red">*</span></label> <input type="text"
+									class="form-control" name="Organization" id="Organization"
+									placeholder="Enter your Present Organization"
+									data-validation-engine="validate[required]">
+							</div> -->
+						
+					
+							<!-- <div class="form-group col-md-6">
+								<label for="Designation">Present Designation<span
+									style="color: red">*</span></label> <input type="text"
+									class="form-control" id="Designation" name="Designation"
+									placeholder="Designation"
+									data-validation-engine="validate[required]">
+							</div> -->
+                             
+
+
+							<div class="form-group col-md-6">
+								<label for="inputZip">Gender<span style="color: red">*</span></label>
+								<select name="gender" id="gender" class="form-control" onchange="showTimeSlotDropdown();" data-validation-engine="validate[required]">
+
+									<option value="">Gender</option>
+									<option value="male">Male</option>
+									<option value="female">Female</option>
+									
+
+								</select>
+							</div>
+
+                           <div class="form-group col-md-6">
+								<label for="inputPassword4">Reg No<span style="color: red">*</span></label> <input type="text" class="form-control" name="abst" id="abst" placeholder="Enter your Registration Number" data-validation-engine="validate[required]">
+							</div>
+						 	
+							<div class="form-group col-md-6" style="display:none;">
+								<div id="passportNumber">
+									<label for="inputCity">Select Slot<span style="color: red">*</span></label> <select id="disciplines" name="disciplines" class="form-control" onchange="showTimeSlotDropdown();" data-validation-engine="validate[required]" style="display:none;">
+
+										<option value="">Choose Your slot</option>
+										<option value="1">UG / PG Students</option>
+										<option value="Wednesday to Saturday">Wednesday to Saturday</option>
+										<option value="Sunday and Monday">Sunday and Monday</option>
+										
+									</select>
+								</div>
+
+							</div> 
+							
+							
+					<div class="form-group col-md-6" id="timeSlotContainer" style="display:hidden;">
+        <label for="timeSlot">Select TimeSlot<span style="color: red">*</span></label>
+        <select id="ieeemember" name="ieeemember" class="form-control" data-validation-engine="validate[required]">
+            <option value="">Choose Your slot first</option>
+        </select>
+    </div>
+
+
+							<div class="form-group col-md-6">
+								<div id="passportNumber">
+									<label for="inputCity">Select Category<span style="color: red">*</span></label> <select id="profile" name="profile" class="form-control" data-validation-engine="validate[required]">
+
+										<option value="">Choose Your Category</option>
+										
+										<option value="1">Student</option>
+										<option value="2">Faculty/Staff</option>
+										<!-- <option value="3">Corporate</option> -->
+									</select>
+								</div>
+
+							</div>
+							
+							<!-- 
+							<div class="form-group col-md-6">
+							<label for="decision">Select Event<span
+								style="color: red">*</span></label> <select name="decision"
+								id="decision" class="form-control"
+								data-validation-engine="validate[required]"
+								>
+
+								<option value="">Select the event</option>
+								<option value="FUTURE TECH EXPO (Centre of Excellence AI and robotics, IoT and Cyber Security )">FUTURE TECH EXPO (Centre of Excellence AI and robotics, IoT and Cyber Security )</option>
+								<option value="CODE BATTLE ">CODE BATTLE </option>
+
+							</select>
+						</div> -->
+							
+							<!-- <div class="form-group col-md-6">
+								<div id="passportNumber">
+									<label for="inputCity">Select Members<span
+										style="color: red">*</span></label> <select id="profile"
+										name="profile" class="form-control"
+										data-validation-engine="validate[required]">
+
+										<option value="">Choose Your Category</option>
+										<option value="1">2 Memnbers</option>
+										<option value="2">3 Memnbers</option>
+										<option value="3">4 Memnbers</option>
+										<option value="4">Third paper author participant</option>
+									</select>
+								</div>
+
+							</div> -->
+							
+							
+							<div class="form-group col-md-6">
+							<label for="inputZip">Country<span style="color: red">*</span></label>
+							<select name="coun" id="coun" class="form-control" data-validation-engine="validate[required]">
+
+								<option value="">select your country</option>
+								<option value="1">India</option>
+
+								<option value="2">Others</option>
+
+							</select>
+						</div>
+							
+							<div class="form-group col-md-6">
+							<label for="inputAddress">State<span style="color: red">*</span></label>
+							<input type="text" class="form-control" id="decision" name="decision" placeholder="Enter your state" data-validation-engine="validate[required]">
+
+
+						</div>
+						
+						<div class="form-group col-md-6">
+							<label for="inputAddress">Address<span style="color: red">*</span></label>
+							<input type="text" class="form-control" id="inputAddress" name="address" placeholder="1234 Main St" data-validation-engine="validate[required]">
+
+
+						</div>
+
+						<div class="form-group col-md-6">
+							<label for="inputAddress2">Mobile Number (i.e:9999999999)<span style="color: red">*</span></label> <input type="text" class="form-control" id="inputAddress2" name="mobile" placeholder="Enter your Mobile number" data-validation-engine="validate[required]">
+
+						</div>
+					
+							<div class="form-group col-md-6">
+								<label for="inputCity">City<span style="color: red">*</span></label>
+								<input type="text" class="form-control" id="inputCity" name="city" data-validation-engine="validate[required]">
+							</div>
+							
+							<div class="form-group col-md-6">
+								<label for="inputCity">Date of Birth<span style="color: red">*</span></label> <input type="date" class="form-control" id="dob" name="dob" data-validation-engine="validate[required]">
+							</div>
+							
+						</div>
+
+						<!--  <div class="form-group">
+							<label for="decision">Is there paper presentation and publication?<span
+								style="color: red">*</span></label> <select name="decision"
+								id="decision" class="form-control"
+								data-validation-engine="validate[required]"
+								onChange="javascript:actionxyz();">
+
+								<option value="">Select</option>
+								<option value="YES">Yes</option>
+								<option value="NO">No</option>
+
+							</select>
+						</div>
+ -->
+						<!-- <div class="form-group col-md-6" id="exp">
+							<label for="pagecount">Number of extra pages<span
+								style="color: red">*</span></label> <input type="number"
+								class="form-control" id="pageCount" name="pageCount"
+								maxlength="1" min="0" max="8" pattern="\d{1}"
+								placeholder="Pages">
+						</div>
+ -- -->
+
+						
+						
+						
+						
+							
+
+
+						
+
+
+
+						<br>
+
+						<button type="button" id="process" onclick="abc();" style="align: right; margin-left: 45%;" class="btn btn-primary col-offset-6">Register</button>
+
+						<br>
+						<div class="form-group col-md-6">
+								<label for="inputAppl">Application number (Check email) <span style="color: red">*</span></label> <input type="text" class="form-control" id="appl" name="appl" >
+						</div>
+						<button type="button" id="downl" onclick="downloadReceiptMod();" style="align: right; margin-left: 45%;" class="btn btn-primary col-offset-6">Download</button>
+
+
+
+					</div>
+
+
+				</div>
+				<script type="text/javascript">
+				
+					function downloadReceiptMod()
+					{
+						var applno=document.getElementById('appl').value;
+						window.open('https://vtop1.vitap.ac.in/GYM/downloadReciept/'+applno, '_blank');
+					}
+				
+				
+					function downloadInvoice() {
+						var data = getnumber();
+
+						/* $("#payment").hide();
+						$("#refresh").hide(); */
+
+						document.getElementById("invoiceLink").href = "conferenceInvoice/"
+								+ data;
+
+						/* var params = "mobile=" + data;
+						$
+								.blockUI({
+									message : '<img src="assets/img/482.GIF"> Loading... Just a moment...'
+								});
+						$.ajax({
+
+							url : "downloadInvoice",
+							type : "POST",
+							data : params,
+							/* 			cache : false,
+										processData : false,
+										contentType : false, */
+						//For Progress Bar
+						/*	success : function(response) {
+								$.unblockUI();
+
+								$("#refresh").html(response);
+													},
+							error : function(jqXHR, textStatus, errorMessage) {
+
+								$("#upload-file-message").text(
+										errorMessage + "Error while Addition");
+							}
+						});
+
+						 */}
+					/* -------------------------------------------------	 */
+					function downloadReciept() {
+						var data = getnumber();
+
+						document.getElementById("recieptLink").href = "downloadReciept/"
+								+ data;
+
+					}
+
+					/* ------------------------------------------------------ */
+
+					function actionxyz() {
+						var dec = document.getElementById("decision").value;
+
+						if (dec == 'YES') {
+							$("#exp").show();
+						} else {
+							$("#exp").hide();
+						}
+					}
+
+					/* ----------------------------------------------------------- */
+
+
+					function xyz2()
+					{
+						var data = getnumber();
+						window.open('https://vtop1.vitap.ac.in/GYM/downloadReciept/'+data, '_blank');
+					}
+
+					function xyz() {
+
+						var data = getnumber();
+
+						$("#payment").hide();
+						$("#refresh").hide();
+
+						var params = "mobile=" + data;
+						$
+								.blockUI({
+									message : '<img src="assets/img/482.GIF"> Loading... Just a moment...'
+								});
+						$
+								.ajax({
+
+									url : "paymentcheckforrac",
+									type : "POST",
+									data : params,
+									/* 			cache : false,
+												processData : false,
+												contentType : false, */
+									//For Progress Bar
+									success : function(response) {
+										$.unblockUI();
+
+										$("#refresh").html(response);
+										if (response.indexOf("www") > 0) {
+
+											var a = document
+													.getElementById("link");
+											a.setAttribute("href", response);
+
+											$("#payment").show();
+											$("#receiptDownload").hide();
+
+										} else {
+
+											$("#refresh").show();
+											$("#receiptDownload").show();
+
+										}
+										$("#p").show();
+
+										document.getElementById("p").innerHTML = response;
+
+									},
+									error : function(jqXHR, textStatus,
+											errorMessage) {
+
+										$("#upload-file-message")
+												.text(
+														errorMessage
+																+ "Error while Addition");
+									}
+								});
+
+					}
+					
+					
+					
+					
+					
+				
+				    function showTimeSlotDropdown() {
+				        var gender = document.getElementById("gender").value;
+				        var slotDropdown = document.getElementById("disciplines");
+				        var timeSlotContainer = document.getElementById("timeSlotContainer");
+				        var timeSlotDropdown = document.getElementById("ieeemember");
+
+				        // Clear existing options
+				        timeSlotDropdown.innerHTML = '<option value="">Choose Your Slot</option>';
+
+				        if (gender === "male" || gender === "female") {
+				            slotDropdown.style.display = "block";
+
+				            if (gender === "male") {
+				                // Populate time slots for Male
+				                timeSlotDropdown.innerHTML += `
+				                  /*   <option value="slot1">06:00 AM to 07:00 AM(Wednesday to Saturday)</option> */
+				                    <option value="slot3">08:00 AM to 09:00 AM(Wednesday to Saturday)</option>
+				                    <option value="slot4">04:00 PM to 05:00 PM(Wednesday to Saturday)</option>
+				                    <option value="slot7">07:00 PM to 08:00 PM(Wednesday to Saturday)</option>
+				                    <option value="slot8">08:00 PM to 09:00 PM(Wednesday to Saturday)</option>
+				                   
+				                `;
+				            } else if (gender === "female") {
+				                // Populate time slots for Female
+				                timeSlotDropdown.innerHTML += `
+				                    <option value="slot2">07:00 AM to 08:00 AM(Wednesday to Saturday)</option>
+				                    <option value="slot5">05:00 PM to 06:00 PM(Wednesday to Saturday)</option>
+				                    <option value="slot6">06:00 PM to 07:00 PM(Wednesday to Saturday)</option>
+				              
+				                `;
+				            }
+
+				            // Show the time slot dropdown
+				            timeSlotContainer.style.display = "block";
+				        } else {
+				            // Hide the time slot dropdown if no gender is selected
+				         //   slotDropdown.style.display = "none";
+				            timeSlotContainer.style.display = "none";
+				        }
+				    }
+				</script>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+				
+				
+				
+				
+			<script>
+    
+</script>
+	
+
+
+	<!-- Footer -->
+	<!-- <footer class="page-footer font-small special-color-dark pt-4 mb-0">
+
+  Footer Elements
+ <div class="container">
+
+ 
+
+
+  Footer Elements
+
+  Copyright
+  <div class=" text-center footer navbar-fixed-bottom " style="margin-bottom:0%; margin-top:12%;"><h5 style="position: fixed;"><b>Developed By VIT-AP SDC</b></h5>
+    <a href="www.vitap.ac.in" class="ml-0" target="_blank" style="color:red;  position: fixed;">link</a>
+  </div>
+  Copyright
+  </div> 
+</footer> -->
+	<!-- Footer -->
+	<!--  <div id="footer" style="background-color:black;  " class="mb-0">
+    <div class="container-fliud" style="display: block;">
+      <p class="footer-block mt-3 text-center text-light"><b>Developed By VIT-AP SDC Team 2019  For any Payment Related Queries Kindly  <span style="color:red;"><i class="fa fa-envelope" aria-hidden="true"></i>  vtop.help@vitap.ac.in</span></b>  <p class="text-right footer-block ml-0">For any Payment Related Queries Kindly Mail to vtop.help@vitap.ac.in</p></p>
+     
+    </div>
+  </div> -->
+	<div class="footer">
+		<p class="footer-block mt-3 text-center text-light">
+			<b>Developed By VIT-AP SDC Team 2024 For any Payment Related
+				Queries Kindly <span class="ml-2" style="color: red;"><i class="fa fa-envelope" aria-hidden="true"></i>
+					vtop.help@vitap.ac.in</span>
+			</b>
+		</p>
+	</div>
+
+</div></div></form></b></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
